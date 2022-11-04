@@ -8,6 +8,10 @@ https://docs.npmjs.com/getting-started/installing-node
 
 https://www.npmjs.com/package/typescript
 
+## Setup a Postgres Database
+The database credentials will be used in the sebsequent steps to configure the .env file. You can create a local DB or use a remote DB for example [AWS RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html)
+
+
 ## Create table in your Postgres DB:
 
 ```
@@ -25,6 +29,8 @@ download and run `npm install`
 `export DB_USER='' DB='' DB_PASS='' DB_HOST='' DB_PORT='' DB_MAX_CLIENTS='' DB_IDLE_TIMEOUT_MS=''`
 
 this can also be done by creating a `.env` file in the root of this project see `.env.example` for a reference
+
+Open `'.env` file and fill in the database credentials retrievd from "Setup Postgres Database" step
 
 ## Quickstart: transpile, lint and start the app all at once
 
